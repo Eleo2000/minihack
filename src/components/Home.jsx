@@ -1,5 +1,6 @@
 import ModelViewer from "../comp/ThreeD"
 import './css/Home.css'
+import Cercla from "./svg/Cercla"
 
 const Home =()=>{
     return(
@@ -10,7 +11,7 @@ const Home =()=>{
             <div className="texte_content  uppercase ">Explorez les etoiles avec miniSpace<br/>
                 Votre voyage vers la connaissance commence ici</div>
 
-                <button className="btn-home ">Explorer</button>
+                <button className="btn-home "> <Cercla/> <div className="txt-btn-home">Explorer</div></button>
         </div>
     )
 }
