@@ -1,6 +1,8 @@
 .about {
+
 	position: relative;
     margin-bottom: 100px;
+	
 
 }
 
@@ -10,18 +12,23 @@
 }
 
 .about__wrapp {
-	display: flex;
-	justify-content: space-between;
+	margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 56px;
+	
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
 }
 
 .about__img,
 .about__txt {
-	width: 30%;
+	width: 90%;
 	height: auto;
 }
 
 .about__txt {
-	padding-right: 70px;
+	
 }
 
 .about__p {

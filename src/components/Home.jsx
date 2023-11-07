@@ -5,6 +5,7 @@ import './css/Home.css'
 import Cercla from "./svg/Cercla"
 import { useEffect, useRef } from "react";
 import Scroller from "../comp/Scroller";
+import About from "../comp/About";
 
 /* The following plugin is a Club GSAP perk */
 gsap.registerPlugin(SplitText)
@@ -41,8 +42,10 @@ const Home =()=>{
 
                 <button className="btn-home "> <Cercla/> <div className="txt-btn-home">Explorer</div></button>
                 <Scroller />
-        </div>
 
+                
+        </div>
+            <About/>
         
         </>
     )
