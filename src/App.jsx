@@ -6,42 +6,42 @@ import Routee from './Routee';
 import Transition from './comp/Transition';
 
 function App() {
-    return (
-        <IconProvider>
-            <BrowserRouter>
-                <AppWithTransition />
-            </BrowserRouter>
-        </IconProvider>
-    );
+  return (
+    <IconProvider>
+      <BrowserRouter>
+        <AppWithTransition />
+      </BrowserRouter>
+    </IconProvider>
+  );
 }
 
 function AppWithTransition() {
-    const location = useLocation();
-    const [showTransition, setShowTransition] = useState(false);
+  const location = useLocation();
+  const [showTransition, setShowTransition] = useState(false);
+  const [showC, setShowC] = useState(false);
 
-    useEffect(() => {
-        setShowTransition(true);
+  useEffect(() => {
+    setShowTransition(true);
+    setShowC(false)
+    const timeoutId = setTimeout(() => {
+      setShowTransition(false);
+        setTimeout(()=>{
+            setShowC(true)
+        },50)
+    }, 2000);
 
-        const timeoutId = setTimeout(() => {
-            setShowTransition(false);
-        }, 2000);
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, [location]);
 
-        return () => {
-            clearTimeout(timeoutId);
-        };
-    }, [location]);
-
-    return (
-        <div className="App">
-            <Header />
-            {showTransition ? (<Transition onComplete={() => setShowTransition(false)} />)
-
-                :
-
-                <Routee />}
-
-        </div>
-    );
+  return (
+    <div className="App">
+      <Header />
+      {showTransition && (<Transition onComplete={() => setShowTransition(false)} />) } 
+      {showC && <Routee />}
+    </div>
+  );
 }
 
 export default App;
