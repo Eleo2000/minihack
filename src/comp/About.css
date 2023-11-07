@@ -1,50 +1,73 @@
 .about {
-
-	position: relative;
-    margin-bottom: 100px;
-	
-
+  position: relative;
+  margin-bottom: 100px;
 }
 
 /* about ********/
 .about .section-title {
-	text-align: left;
+  text-align: left;
 }
 
 .about__wrapp {
-	margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 56px;
-	
-	display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+  position: relative;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 56px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
 }
 
 .about__img,
 .about__txt {
-	width: 90%;
-	height: auto;
+  width: 90%;
+  height: auto;
 }
 
 .about__txt {
-	
+  position: absolute;
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid black;
+
+  top: 100px;
+  left: 40px;
+  width: 300px;
+}
+
+.about__txt2 {
+  position: absolute;
+  border-radius: 16px;
+  padding: 16px;
+  margin-left: 40px;
+  border: 1px solid black;
+  bottom: 100px;
+  right: 50px;
+  width: 300px;
+}
+
+.about__txt2,
+.about__txt {
+  backdrop-filter: blur(20px); /* Ajustez la valeur du flou selon vos besoins */
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .about__p {
-	line-height: 1.4;
-	font-size: 20px;
-	color: #4b4b4b;
+  line-height: 1.4;
+  font-size: 20px;
+  color: #4b4b4b;
 }
 
 .about__img {
-	height: 100vh;
-	overflow: hidden;
+  width: 40%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .about__img img {
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
