@@ -4,6 +4,7 @@ import ModelViewer from "../comp/ThreeD"
 import './css/Home.css'
 import Cercla from "./svg/Cercla"
 import { useEffect, useRef } from "react";
+import Scroller from "../comp/Scroller";
 
 /* The following plugin is a Club GSAP perk */
 gsap.registerPlugin(SplitText)
@@ -30,6 +31,7 @@ const Home =()=>{
     }, []);
 
     return(
+        <>
         <div className="home text-2xl text-center">
             <div className="3d_content ">
                 <ModelViewer />
@@ -38,7 +40,11 @@ const Home =()=>{
                 Votre voyage vers la connaissance commence ici</div>
 
                 <button className="btn-home "> <Cercla/> <div className="txt-btn-home">Explorer</div></button>
+                <Scroller />
         </div>
+
+        
+        </>
     )
 }
 

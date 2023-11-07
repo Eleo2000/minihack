@@ -36,13 +36,14 @@ function Scroller() {
     return (
       <div className="scroller" data-speed="slow">
         <ul className="tag-list scroller__inner">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JS</li>
-          <li>SSG</li>
-          <li>webdev</li>
-          <li>animation</li>
-          <li>UI/UX</li>
+          <li>Red shalk</li>
+          <li>Passion4Humanity</li>
+          <li>MISA</li>
+          <li>Ingenosya</li>
+          <li>Bocasay</li>
+          <li>Novity</li>
+          <li>Red shalk</li>
+          
         </ul>
       </div>
     );
