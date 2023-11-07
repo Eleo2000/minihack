@@ -1,0 +1,38 @@
+
+
+.func{
+    background-color: grey;
+    padding-top:124px;
+
+}
+
+.btn-func svg {
+    width: 50px;
+    transform: rotateZ(-45deg);
+}
+.btn-func{
+    margin-top: 16px;
+    height: 50px;
+    display: grid;
+    align-content: center;
+    padding-right: 24px;
+    font-size: 16px;
+}
+
+.carda{
+    position: relative;
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px solid black;
+    display: grid;
+    justify-items: center;
+    width: 400px;
+    grid-gap: 24px;
+}
+
+.functionXd{
+    margin-top: 64px;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}

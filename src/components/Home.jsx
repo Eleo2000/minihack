@@ -6,6 +6,7 @@ import Cercla from "./svg/Cercla"
 import { useEffect, useRef } from "react";
 import Scroller from "../comp/Scroller";
 import About from "../comp/About";
+import ScrollAnimation from "../comp/ScrollAnimation";
 
 /* The following plugin is a Club GSAP perk */
 gsap.registerPlugin(SplitText)
@@ -46,6 +47,8 @@ const Home =()=>{
                 
         </div>
             <About/>
+
+            <ScrollAnimation/>
         
         </>
     )
