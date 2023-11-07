@@ -1,0 +1,23 @@
+
+.contenaire{
+    z-index: 99999;
+    position: fixed;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.transition , .transition2{
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+
+}
+
+.tile , .tile1{
+    position: relative;
+    background-color: red;
+    
+    height: 0vh;
+}

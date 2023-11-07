@@ -1,0 +1,43 @@
+.about {
+	position: relative;
+    margin-bottom: 100px;
+
+}
+
+/* about ********/
+.about .section-title {
+	text-align: left;
+}
+
+.about__wrapp {
+	display: flex;
+	justify-content: space-between;
+}
+
+.about__img,
+.about__txt {
+	width: 30%;
+	height: auto;
+}
+
+.about__txt {
+	padding-right: 70px;
+}
+
+.about__p {
+	line-height: 1.4;
+	font-size: 20px;
+	color: #4b4b4b;
+}
+
+.about__img {
+	height: 100vh;
+	overflow: hidden;
+}
+
+.about__img img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
