@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useLayoutEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -8,10 +8,11 @@ import Cercla from '../components/svg/Cercla';
 gsap.registerPlugin(ScrollTrigger);
 
 const ScrollAnimation = () => {
-	useEffect(() => {
+	
+	useLayoutEffect(() => {
 		// Animation pour la première div
 		//A rendre en tant que function
-
+		
 		gsap.to('.pin-content', {
 			scrollTrigger: {
 			  trigger: '.animation-container', // L'élément qui déclenche l'épinglage
@@ -42,7 +43,7 @@ const ScrollAnimation = () => {
 			},
 		});
 
-		
+
 		gsap.to('.div1', {
 			opacity:0,
 			y: -200,

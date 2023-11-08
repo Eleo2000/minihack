@@ -1,0 +1,25 @@
+
+
+.portal{
+    transform: translateY(-200px);
+    display: grid;
+    justify-content: center;
+}
+
+.titra-portal{
+    background-color: rgb(255, 255, 255);
+    width: max-content;
+    padding: 36px;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.titra-portal::before{
+    z-index: -1;
+    position: absolute;
+    background-color: black;
+    content:"";
+    height: 2px;width: 100vw;
+}
