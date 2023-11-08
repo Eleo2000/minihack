@@ -52,7 +52,9 @@ const Home =()=>{
             <ScrollAnimation/>
 
             <Portal/>
-        
+            <div className="footer h-80">
+                footer
+            </div>
         </>
     )
 }

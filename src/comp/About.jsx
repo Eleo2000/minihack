@@ -12,12 +12,7 @@ const About = () => {
     //bug a corriger xD
     //tokony asiana end ito xD
     gsap.from('.about__img', {
-      scrollTrigger: {
-        trigger: '.about',
-        start: 'top bottom',
-        end: 'bottom top',
-        scrub: 1.9,
-      },
+      
       yPercent: 10,
       width:'40%',
     });
@@ -25,8 +20,8 @@ const About = () => {
     gsap.to('.about__img', {
       scrollTrigger: {
         trigger: '.about',
-        start: 'top bottom',
-        end: 'bottom top',
+        start: 'top center',
+        end: 'bottom center',
         scrub: 1.9,
       },
       yPercent: 0,
@@ -36,7 +31,8 @@ const About = () => {
     gsap.to('.about__img img', {
       scrollTrigger: {
         trigger: '.about',
-        start: 'top bottom',
+        start: 'top center',
+        end:'bottom center',
         scrub: 1.9,
       },
       scale: 1.5,

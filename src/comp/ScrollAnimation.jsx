@@ -87,7 +87,7 @@ const ScrollAnimation = () => {
 			duration:2,
 			scrollTrigger: {
 				trigger: '.div1',
-				start: 'bottom center',
+				start: 'top center',
 				
 				scrub:1.9,
 
