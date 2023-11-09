@@ -20,7 +20,7 @@ function Header() {
     const iconNames = ['home', 'education', 'minispace'];
   
     return (
-      <div className="header">
+      <div id='Header' className="header">
         <div className="logo">
           <Logo />
         </div>
