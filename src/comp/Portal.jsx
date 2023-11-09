@@ -10,17 +10,16 @@ const Portal = () => {
 
     useLayoutEffect(() => {
 		
-
-
+        
         gsap.from('.perso', {
 			
 			scale: 1,
-            y:10,
+            y:50,
 		});
         gsap.to('.perso', {
 			
-			scale: 1.,
-            y:10,
+			scale: 1.2,
+            y:0,
 			duration:0.4,
 			scrollTrigger: {
 				trigger: '.content-portal',

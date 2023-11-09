@@ -39,7 +39,7 @@ const Home =()=>{
             <div className="3d_content ">
                 <ModelViewer />
             </div>
-            <div ref={text_hero} style={{opacity:0}} className="texte_content  uppercase ">Explorez les etoiles avec miniSpace<br/>
+            <div ref={text_hero} style={{opacity:0}} className="texte_content  uppercase ">Explorez les etoiles avec <span>miniSpace</span><br/>
                 Votre voyage vers la connaissance commence ici</div>
 
                 <button className="btn-home "> <Cercla/> <div className="txt-btn-home">Explorer</div></button>

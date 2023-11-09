@@ -73,9 +73,7 @@ const About = () => {
           <p className="about__p">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque esse
             aspernatur fugit debitis quisquam. Quia exercitationem ipsum voluptas
-            voluptatum hic enim quo provident culpa possimus cupiditate! Dolorum
-            quae doloremque cum rerum ipsam inventore beatae, at odit, velit,
-            aspernatur minima! Corporis.
+            
           </p>
         </div>
 
@@ -88,9 +86,7 @@ const About = () => {
           <p className="about__p">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque esse
             aspernatur fugit debitis quisquam. Quia exercitationem ipsum voluptas
-            voluptatum hic enim quo provident culpa possimus cupiditate! Dolorum
-            quae doloremque cum rerum ipsam inventore beatae, at odit, velit,
-            aspernatur minima! Corporis.
+            
           </p>
         </div>
       </div>

@@ -128,7 +128,7 @@ const ScrollAnimation = () => {
 					<div className="info">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque esse aspernatur fugit debitis quisquam.
 					 Quia exercitationem ipsum voluptas voluptatum hic enim quo provident culpa possimus cupiditate! 
-					 Dolorum quae doloremque cum rerum ipsam inventore beatae, at odit, velit, aspernatur minima! Corporis.
+					 
 					</div>
 					<button className='btn-func btn-home'><Cercla/> <div className="txt-btn-home">voir</div></button>
 				</div>
@@ -143,7 +143,7 @@ const ScrollAnimation = () => {
 					<div className="info">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque esse aspernatur fugit debitis quisquam.
 					 Quia exercitationem ipsum voluptas voluptatum hic enim quo provident culpa possimus cupiditate! 
-					 Dolorum quae doloremque cum rerum ipsam inventore beatae, at odit, velit, aspernatur minima! Corporis.
+					 
 					</div>
 					<button className='btn-func btn-home'><Cercla/> <div className="txt-btn-home">voir</div></button>
 				</div>

@@ -28,23 +28,24 @@
 .about__txt {
   position: absolute;
   border-radius: 16px;
-  padding: 16px;
+  padding: 32px;
   border: 1px solid black;
 
   top: 100px;
   left: 40px;
-  width: 300px;
+  width: 400px;
 }
 
 .about__txt2 {
   position: absolute;
   border-radius: 16px;
-  padding: 16px;
+  padding: 32px;
   margin-left: 40px;
   border: 1px solid black;
   bottom: 100px;
   right: 50px;
-  width: 300px;
+  width: 400px;
+
 }
 
 .about__txt2,
