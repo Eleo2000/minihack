@@ -2,7 +2,8 @@ import { useLayoutEffect } from 'react';
 import './Portal.css'
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
+import"./Footer.css"
+import Footer from "./Footer.jsx"
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -108,7 +109,10 @@ const Portal = () => {
                         <div className="perso imagex"></div>
                     </div>
                 </div>
+                <Footer/>
             </div>
+
+            
 
         </>
     )

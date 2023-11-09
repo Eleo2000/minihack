@@ -27,8 +27,8 @@ const Footer = () => {
 
                     </div>
                 </div>
-                <div className="evo">2023 Evolutech - tous droits reserves</div>
                 <div onClick={scrollToHeader} className="toTop underr">revenir vers le haut</div>
+                <div className="evo">2023 Evolutech - tous droits reserves</div>
             </div>
         </>
     )

@@ -4,6 +4,7 @@
     transform: translateY(-200px);
     display: grid;
     width: 100vw;
+    position: relative;
 }
 
 
@@ -109,3 +110,52 @@
    
 
 }
+
+/*****responsive portal ***/
+
+@media screen and (max-width: 1330px) {
+    .portal-enter{
+        
+        width: 100%!important;
+        justify-content: center;
+     
+    }
+
+
+  }
+@media screen and (max-width: 960px) {
+    .portal-enter{
+        
+        
+        aspect-ratio: 4/3;
+    }
+
+
+  }
+@media screen and (max-width: 850px) {
+    .portal-enter{
+        
+        
+        aspect-ratio: 3/3;
+    }
+
+
+  }
+@media screen and (max-width: 660px) {
+    .portal-enter{
+        
+        
+        aspect-ratio: 1/1;
+    }
+
+    .terre-l,.arbre,.imagex,.terre-r{
+        background-size: contain;
+    }
+
+    .perso{
+        background-size: 40%;
+    }
+
+  }
+
+/*****Fin responsive portal****/

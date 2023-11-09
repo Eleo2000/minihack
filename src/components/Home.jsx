@@ -8,7 +8,6 @@ import Scroller from "../comp/Scroller";
 import About from "../comp/About";
 import ScrollAnimation from "../comp/ScrollAnimation";
 import Portal from "../comp/Portal";
-import Footer from "../comp/Footer";
 
 /* The following plugin is a Club GSAP perk */
 gsap.registerPlugin(SplitText)
@@ -53,7 +52,7 @@ const Home =()=>{
             <ScrollAnimation/>
 
             <Portal/>
-            <Footer/>
+            
         </>
     )
 }

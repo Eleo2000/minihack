@@ -61,7 +61,7 @@ const About = () => {
       <div className="about__wrapp">
         <div className="about__img">
           <img
-            src="https://dmitrinaumov.github.io/Paralax-effect-with-gsap-scrolltrigger/img/2.jpg"
+            src="img/boy.png"
             alt="2"
           />
         </div>
