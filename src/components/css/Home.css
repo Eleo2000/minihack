@@ -5,7 +5,7 @@
     padding: 0px 64px 0px 10px;
     font-size: 32px;
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: max-content 1fr;
     align-items: center;
     border-radius:16px;
     border: 3px solid black;

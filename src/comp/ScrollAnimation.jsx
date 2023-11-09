@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useLayoutEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -8,10 +8,11 @@ import Cercla from '../components/svg/Cercla';
 gsap.registerPlugin(ScrollTrigger);
 
 const ScrollAnimation = () => {
-	useEffect(() => {
+	
+	useLayoutEffect(() => {
 		// Animation pour la première div
 		//A rendre en tant que function
-
+		
 		gsap.to('.pin-content', {
 			scrollTrigger: {
 			  trigger: '.animation-container', // L'élément qui déclenche l'épinglage
@@ -42,7 +43,7 @@ const ScrollAnimation = () => {
 			},
 		});
 
-		
+
 		gsap.to('.div1', {
 			opacity:0,
 			y: -200,
@@ -86,7 +87,7 @@ const ScrollAnimation = () => {
 			duration:2,
 			scrollTrigger: {
 				trigger: '.div1',
-				start: 'bottom center',
+				start: 'top center',
 				
 				scrub:1.9,
 
@@ -116,7 +117,7 @@ const ScrollAnimation = () => {
 
 	return (
 		<div className="animation-container func">
-			<div className="titre-func text-center text-2xl uppercase">
+			<div className="titre-func text-center text-2xl uppercase mb-6">
 				Le Pouvoir de miniSpace
 			</div>
 			<div className="div1 functionXd h-1/3">
@@ -127,7 +128,7 @@ const ScrollAnimation = () => {
 					<div className="info">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque esse aspernatur fugit debitis quisquam.
 					 Quia exercitationem ipsum voluptas voluptatum hic enim quo provident culpa possimus cupiditate! 
-					 Dolorum quae doloremque cum rerum ipsam inventore beatae, at odit, velit, aspernatur minima! Corporis.
+					 
 					</div>
 					<button className='btn-func btn-home'><Cercla/> <div className="txt-btn-home">voir</div></button>
 				</div>
@@ -142,7 +143,7 @@ const ScrollAnimation = () => {
 					<div className="info">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque esse aspernatur fugit debitis quisquam.
 					 Quia exercitationem ipsum voluptas voluptatum hic enim quo provident culpa possimus cupiditate! 
-					 Dolorum quae doloremque cum rerum ipsam inventore beatae, at odit, velit, aspernatur minima! Corporis.
+					 
 					</div>
 					<button className='btn-func btn-home'><Cercla/> <div className="txt-btn-home">voir</div></button>
 				</div>

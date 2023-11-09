@@ -17,7 +17,7 @@
 
 .tile , .tile1{
     position: relative;
-    background-color: red;
+    background-color: rgb(178, 204, 255);
     
     height: 0vh;
 }

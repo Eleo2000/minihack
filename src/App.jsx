@@ -5,6 +5,8 @@ import { BrowserRouter, useLocation } from 'react-router-dom';
 import Routee from './Routee';
 import Transition from './comp/Transition';
 
+
+
 function App() {
   return (
     <IconProvider>
@@ -25,9 +27,9 @@ function AppWithTransition() {
     setShowC(false)
     const timeoutId = setTimeout(() => {
       setShowTransition(false);
-        setTimeout(()=>{
-            setShowC(true)
-        },50)
+      setTimeout(() => {
+        setShowC(true)
+      }, 50)
     }, 2000);
 
     return () => {
@@ -37,8 +39,11 @@ function AppWithTransition() {
 
   return (
     <div className="App">
+      <style>
+        @import url('https://fonts.cdnfonts.com/css/press-start-2p');
+      </style>
       <Header />
-      {showTransition && (<Transition onComplete={() => setShowTransition(false)} />) } 
+      {showTransition && (<Transition onComplete={() => setShowTransition(false)} />)}
       {showC && <Routee />}
     </div>
   );

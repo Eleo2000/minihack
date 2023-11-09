@@ -7,6 +7,8 @@ import { useEffect, useRef } from "react";
 import Scroller from "../comp/Scroller";
 import About from "../comp/About";
 import ScrollAnimation from "../comp/ScrollAnimation";
+import Portal from "../comp/Portal";
+import Footer from "../comp/Footer";
 
 /* The following plugin is a Club GSAP perk */
 gsap.registerPlugin(SplitText)
@@ -38,7 +40,7 @@ const Home =()=>{
             <div className="3d_content ">
                 <ModelViewer />
             </div>
-            <div ref={text_hero} style={{opacity:0}} className="texte_content  uppercase ">Explorez les etoiles avec miniSpace<br/>
+            <div ref={text_hero} style={{opacity:0}} className="texte_content  uppercase ">Explorez les etoiles avec <span>miniSpace</span><br/>
                 Votre voyage vers la connaissance commence ici</div>
 
                 <button className="btn-home "> <Cercla/> <div className="txt-btn-home">Explorer</div></button>
@@ -49,7 +51,9 @@ const Home =()=>{
             <About/>
 
             <ScrollAnimation/>
-        
+
+            <Portal/>
+            <Footer/>
         </>
     )
 }

@@ -1,0 +1,111 @@
+
+
+.portal{
+    transform: translateY(-200px);
+    display: grid;
+    width: 100vw;
+}
+
+
+.content-portal{
+    z-index: 66;
+    display: grid;
+    justify-items: center;
+    
+    
+    overflow: hidden;
+}
+.titra-portal{
+    overflow: hidden;
+
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    width:100vw;
+    padding: 36px;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-self: center;
+}
+.titra-portal::before{
+    z-index: -1;
+   
+    position: absolute;
+    background-color: black;
+    content:"";
+    height: 2px;
+    width: 100vw;
+}
+
+.portal-enter{
+    display: grid;
+    position: relative;
+    aspect-ratio: 16/9;
+    width: 80%;
+    justify-content: center;
+}
+
+.imagex{
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    transform-origin: center;
+}
+
+.perso{
+    width: 100%;
+    height: 100%;
+    background: url(../../public/img/perso.png);
+    
+    background-repeat: no-repeat;
+    background-position: bottom center;
+
+}
+.terre-l{
+    
+    width: 100%;
+    height: 100%;
+    background: url(../../public/img/terre-l.png);
+    background-color: rgba(250, 235, 215, 0);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+   
+
+}
+.terre-r{
+    
+    width: 100%;
+    height: 100%;
+    background: url(../../public/img/terre-r.png);
+    background-color: rgba(250, 235, 215, 0);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+   
+
+}
+
+.arbre{
+    
+    width: 100%;
+    height: 100%;
+    background: url(../../public/img/arbre.png);
+    background-color: rgba(250, 235, 215, 0);
+    background-repeat: no-repeat;
+    background-position: 20% 80%;
+   
+
+}
+.back{
+    
+    width: 100%;
+    height: 100%;
+    background: url(../../public/img/bak.png);
+    background-color: rgba(250, 235, 215, 0);
+    background-repeat: no-repeat;
+    
+    background-position: bottom center;
+   
+
+}
