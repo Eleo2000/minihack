@@ -1,6 +1,7 @@
 import gsap from 'gsap';
 import Logo from '../components/svg/Logo'
 import './Footer.css'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 
@@ -16,7 +17,7 @@ const Footer = () => {
         <>
             <div className="footer">
                 <div className="top">
-                    <div className="logo"><Logo/></div>
+                    <Link to="/" className="logo"><Logo/></Link>
                     <div className="spans uppercase">
                         <span className="footer-span underr">securite</span>
                         <span className="footer-span underr"> mentions legales</span>

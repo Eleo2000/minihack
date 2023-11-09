@@ -67,7 +67,7 @@ const About = () => {
         </div>
         <div className="about__txt">
           <h2 className="section-title">
-            abo<span className="stroke">ut</span>
+            <span className="stroke">about</span>
             <span className="section-title__square"></span>
           </h2>
           <p className="about__p">
@@ -80,7 +80,7 @@ const About = () => {
 
         <div className="about__txt2">
           <h2 className="section-title">
-            abo<span className="stroke">ut</span>
+            <span className="stroke">about</span>
             <span className="section-title__square"></span>
           </h2>
           <p className="about__p">

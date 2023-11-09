@@ -117,7 +117,7 @@ const ScrollAnimation = () => {
 
 	return (
 		<div className="animation-container func">
-			<div className="titre-func text-center text-2xl uppercase">
+			<div className="titre-func text-center text-2xl uppercase mb-6">
 				Le Pouvoir de miniSpace
 			</div>
 			<div className="div1 functionXd h-1/3">
