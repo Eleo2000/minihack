@@ -35,9 +35,9 @@ function Header() {
 
   return (
     <div className="header">
-      <div className="logo">
+      <Link to="/" className="logo">
         <Logo />
-      </div>
+      </Link>
       <div className="menu">
         <div className="icones">
           {iconNames.map((iconName) => (
