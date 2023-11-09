@@ -36,3 +36,21 @@
     grid-template-columns: 1fr 1fr;
     display: grid;
 }
+
+
+/******responsive FonctionnalitE****/
+
+@media screen and (max-width: 900px) {
+    
+    .functionXd{
+       
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+    
+  }
+
+
+/******Fin responsive FonctionnalitE****/

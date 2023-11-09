@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useIconContext } from '../IconContext';
 import './css/Header.css';
 import { Link, useLocation } from 'react-router-dom';
@@ -18,9 +18,35 @@ function Header() {
   const { activeIcon, handleIconClick } = useIconContext();
   const iconNames = ['home', 'education', 'minispace'];
   const location = useLocation();
+  const activeIconFromLocation = getActiveIcon(location.pathname);
 
-  // Fonction pour obtenir le nom de l'icône active en fonction de l'emplacement actuel
-  const getActiveIcon = (pathname) => {
+  const [isCardVisible, setIsCardVisible] = useState(false);
+  const cardRef = useRef(null);
+  const profileRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (cardRef.current && !cardRef.current.contains(event.target) && profileRef.current && !profileRef.current.contains(event.target)) {
+        setIsCardVisible(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  const showCard = () => {
+    setIsCardVisible(!isCardVisible);
+  };
+
+  const hideCard = () => {
+    setIsCardVisible(false);
+  };
+
+  function getActiveIcon(pathname) {
     if (pathname === '/') {
       return 'home';
     }
@@ -29,9 +55,7 @@ function Header() {
       return match[1];
     }
     return null;
-  };
-
-  const activeIconFromLocation = getActiveIcon(location.pathname);
+  }
 
   return (
     <div className="header">
@@ -51,9 +75,17 @@ function Header() {
             </Link>
           ))}
         </div>
-        <div className="profile">
+        <div ref={profileRef} onClick={showCard} className="profile">
           <ProfileIcon />
         </div>
+
+        {isCardVisible && (
+          <div className="card" ref={cardRef}>
+            <h2>Profil de Antroine</h2>
+            <div className="deconnecta underra "> Deconnecter </div>
+            <button className = "  underra " onClick={hideCard}>Fermer</button>
+          </div>
+        )}
       </div>
     </div>
   );
